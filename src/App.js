@@ -29,10 +29,12 @@ function App() {
  
   return (
     <div className="App">
-      <h1>Dictionary Application</h1>
-      <p className="reho">Word of the day<br>
-        </br>Hello: <p>used as a greeting or to begin with a phone conversation</p></p>
+      <h1>The Dictionary Application</h1>
+      <div className='reho'><h3>word of the day</h3>
+         <p>Happy: This is a word to signify an emotion</p></div>
+         <br></br>
       <div className="searchBox">
+ 
         <input
           type="text"
           placeholder="Search for a word"
@@ -80,7 +82,6 @@ function App() {
         </div>
       )}
     </div>
-    
   );
 }
  
