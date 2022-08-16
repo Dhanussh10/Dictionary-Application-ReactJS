@@ -3,6 +3,7 @@ import Axios from "axios";
 import "./App.css";
 import { FaSearch } from "react-icons/fa";
 import { FcSpeaker } from "react-icons/fc";
+const port=process.env.port || 8000
  
 function App() {
   // Setting up the initial states using react hook 'useState'
@@ -84,5 +85,9 @@ function App() {
     </div>
   );
 }
+
+App.listen(port, ()=>{
+  console.log('listening to port no at ${port}');
+})
  
 export default App;
